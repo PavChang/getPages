@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Hello from Electron renderer!</title>
+  </head>
+  <body>
+    <h1>Print to terminal</h1>
+    <form>
+      <input id="address" type="text" autofocus /><br>
+      <input id="ip" type="text"/><br>
+      <input type="submit"/>
+    </form>
+    <div id="responses"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

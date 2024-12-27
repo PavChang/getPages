@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Main Process",
+        "type": "node",
+        "request": "launch",
+        "cwd": "${workspaceFolder}",
+        "runtimeExecutable": "${workspaceFolder}/frontend/node_modules/.bin/electron",
+        "windows": {
+          "runtimeExecutable": "${workspaceFolder}/frontend/node_modules/.bin/electron.cmd"
+        },
+        "runtimeArgs": [
+            "${workspaceFolder}/frontend/main.js",
+            "--remote-debugging-port=9222"
+        ],
+        "program": "${workspaceFolder}/frontend/main.js"
+      }
+    ]
+  }

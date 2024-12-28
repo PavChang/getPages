@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Hello from Electron renderer!</title>
+  </head>
+  <body>
+    <h1>Print to terminal</h1>
+    <form id = "proxy_conf">
+      代理设置:</br> 
+      代理服务器的地址:</br>
+      <input id="proxy" type="text" autofocus value="https://www.google.fr"/><br>
+      端口:</br>
+      <input id="port" type="text"/><br>
+      <input type = "submit" value = "提交"/>
+      </br>
+    </form>
+    <form id = "time_conf">
+      定时设置:</br> 
+      等待时间:</br>
+      <input id="wait_time" type="text" value="35"/></br>
+      其他相关参数:</br>
+      <input id="other" type="text"/></br>
+      <input type = "submit" value = "提交"/>
+      </br>
+    </form>
+    <form id="advanced_conf">
+      高级设置:</br> 
+      请求头设置:</br>
+      <input id="headers" type="text"/></br>
+      用户代理列表等:</br>
+      <input id="proxy_list" type="text"/></br>
+      <input type = "submit" value = "提交"/>
+      </br>
+    </form>
+    <script src="conf.js"></script>
+  </body>
+</html>

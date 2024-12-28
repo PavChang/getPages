@@ -15,14 +15,20 @@
   </head>
   <body>
     <h1>Print to terminal</h1>
+    <a href="./conf.html">设置界面</a>
     <form>
       页面地址:</br>      
       <input id="address" type="text" autofocus value="https://www.google.fr"/><br>
       <input id="ip" type="text"/><br>
       <input type = "submit" id = "start" value = "开始"/>
+      <input type = "button" id = "pause" value = "暂停"/>
+      <input type = "button" id = "resume" value = "恢复"/>
       <input type = "button" id = "stop" value = "停止"/>
       </br>
     </form>
+    状态指示：
+    <div id="status"></div>
+    日志显示区域：</br>
     <div id="responses"></div>
     <script src="app.js"></script>
   </body>
